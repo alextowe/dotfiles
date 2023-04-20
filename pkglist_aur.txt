@@ -1,2 +1,0 @@
-lightdm-mini-greeter
-yay-git
