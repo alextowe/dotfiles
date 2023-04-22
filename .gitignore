@@ -3,6 +3,7 @@
 !.gitignore
 !.bashrc
 
+!.config
 !.config/i3
 !.config/i3status
 !.config/kitty
