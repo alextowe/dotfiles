@@ -3,12 +3,11 @@
 !.gitignore
 !.bashrc
 
-.config/*
-!.config/i3/
-!.config/i3status/
-!.config/kitty/
-!.config/nvim/
-!.config/ranger/
+!.config/i3
+!.config/i3status
+!.config/kitty
+!.config/nvim
+!.config/ranger
 !.config/picom.conf
 
 !.images
