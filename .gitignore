@@ -9,7 +9,7 @@
 !.config/i3status/*
 !.config/kitty/
 !.config/kitty/*
-!.config/nvim/*
+!.config/nvim/
 !.config/nvim/*
 !.config/ranger/
 !.config/ranger/*
