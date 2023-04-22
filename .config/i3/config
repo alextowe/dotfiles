@@ -17,7 +17,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # set background image
-exec --no-startup-id feh --bg-fill $HOME/.config/background.png
+exec --no-startup-id feh --bg-fill $HOME/.images/background.png
 
 # enable floating for certain windows/applications
 for_window [class="floating"] floating enable, border normal, resize set 1200 700, move position center

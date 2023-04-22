@@ -1,6 +1,29 @@
 *
 
 !.gitignore
-!.config/*
 !.bashrc
+!.config
+!.config/i3/
+!.config/i3/*
+!.config/i3status/
+!.config/i3status/*
+!.config/kitty/
+!.config/kitty/*
+!.config/nvim/*
+!.config/nvim/*
+!.config/ranger/
+!.config/ranger/*
+!.config/picom.conf
+
+!.images
+!.images/*
+
+!.scripts
+!scripts/*
+
+!.setup
+!.setup/*
+
+!.workspaces
+!.workspaces/*
 

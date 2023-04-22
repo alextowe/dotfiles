@@ -12,7 +12,7 @@ export EDITOR=nvim # editor
 export SUDO_EDITOR=nvim # sudo editor
 alias e="$EDITOR"
 alias se="sudoedit"
-alias clear-edit="rm $HOME/.local/state/nvim/swap/*" # clear buffers left open after close
+alias clearedit="rm $HOME/.local/state/nvim/swap/*" # clear buffers left open after close
 
 
 
