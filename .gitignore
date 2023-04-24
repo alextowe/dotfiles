@@ -1,27 +1,30 @@
-/*
+/**
 
+# Files in the main directory can be specified like this.
 !/.gitignore
 !/.bashrc
 
+# For folders, first unignore the folder, then ignore all of the folders contents, and lastly specify which items in the folder are to be version controlled.
 !/.config/
-/.config/*
-!/.config/pavucontrol.conf
+/.config/**
 !/.config/i3/
-#!/.config/i3status
+!/.config/i3status
 !/.config/kitty/
-#!/.config/nvim
-#!/.config/ranger
-#!/.config/picom.conf
+!/.config/nvim
+!/.config/ranger
+!/.config/picom.conf
 
-!/.images
-!/.images/*
+!/.images/
+/.images/**
+!/.images/background.png
 
-!/.scripts
-!/.scripts/*
+!/.scripts/
+/.scripts/**
 
-!/.setup
-!/.setup/*
+!/.setup/
+/.setup/**
+!/.setup/install-packages.sh
 
-!/.workspaces
-!/.workspaces/*
-
+!/.workspaces/
+/.workspaces/**
+!/.workspaces/workspace-2.json
