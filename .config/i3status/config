@@ -12,10 +12,14 @@ general {
 }
 
 
-order += "tztime local"
+order += "tztime local_time"
+order += "tztime local_date"
 
 
+tztime local_time {
+		format = " %H:%M %Z"
+}
 
-tztime local {
-        format = "%m/%d/%y %H:%M"
+tztime local_date {
+		format = " %a, %b %d, %Y "
 }
