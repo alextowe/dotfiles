@@ -1,25 +1,27 @@
-*
+/*
 
-!.gitignore
-!.bashrc
+!/.gitignore
+!/.bashrc
 
-!.config
-!.config/i3
-!.config/i3status
-!.config/kitty
-!.config/nvim
-!.config/ranger
-!.config/picom.conf
+!/.config/
+/.config/*
+!/.config/pavucontrol.conf
+!/.config/i3/
+#!/.config/i3status
+!/.config/kitty/
+#!/.config/nvim
+#!/.config/ranger
+#!/.config/picom.conf
 
-!.images
-!.images/*
+!/.images
+!/.images/*
 
-!.scripts
-!scripts/*
+!/.scripts
+!/.scripts/*
 
-!.setup
-!.setup/*
+!/.setup
+!/.setup/*
 
-!.workspaces
-!.workspaces/*
+!/.workspaces
+!/.workspaces/*
 
