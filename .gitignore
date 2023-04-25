@@ -3,6 +3,7 @@
 # Files in the main directory can be specified like this.
 !/.gitignore
 !/.bashrc
+!/.Xresources
 
 # For folders, first unignore the folder, then ignore all of the folders contents, and lastly specify which items in the folder are to be version controlled.
 !/.config/

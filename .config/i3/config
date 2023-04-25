@@ -1,6 +1,15 @@
 # set mod keys
 set $mod Mod4
 
+
+set $transparent #00000000
+set_from_resource $focused 		color3 		#000000     	
+set_from_resource $unfocused   	color0		#000000         	
+set_from_resource $bg 			background 	#000000
+set_from_resource $fg 			foreground 	#000000
+set_from_resource $text0		color7		#000000 	
+set_from_resource $text1		color6		#000000 	
+
 # set font for window titles and i3bar
 #font pango:monospace 8
 font pango:DejaVu Sans Mono 8
@@ -97,7 +106,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 "
+set $ws1 "1 "
 set $ws2 "2 "
 set $ws3 "3 "
 set $ws4 "4 "
@@ -105,8 +114,8 @@ set $ws5 "5 "
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws9 "9 "
+set $ws10 "10 "
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -142,6 +151,9 @@ workspace 2 output $monitor0
 workspace 3 output $monitor0
 workspace 4 output $monitor1
 workspace 5 output $monitor1
+
+# assign applications to specific workspaces
+assign [class="^Chromium$"] $ws9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -199,11 +211,46 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+
+
+
+
+
+
+
+# set colors
+#                       Border      Background	Text 	Indicator	Child_Border
+client.focused          $focused 	$focused 	$text0 	$focused 	$focused 	
+client.focused_inactive $unfocused	$unfocused	$text1	$unfocused	$unfocused
+client.unfocused        $unfocused	$unfocused	$text1	$unfocused	$unfocused
+client.urgent           $fg			$fg			$bg		$fg			$fg
+client.placeholder		$unfocused	$unfocused	$text1	$unfocused	$unfocused
+client.background       $background
+
+
+
 # start i3bar and py3status
 bar {
         status_command i3status
 
-}
+		colors {
+        		background	$bg
+        		statusline	$text0
+        		separator	$text0
+
+				# 					Border		Background	Text	
+				focused_workspace	$focused	$focused	$text0 
+        		active_workspace	$focused  	$unfocused	$text1 
+        		inactive_workspace	$focused  	$unfocused  $text1 
+				urgent_workspace    $fg			$fg			$bg
+				binding_mode		$focused	$unfocused	$text1
+		} 	
+
+}		
+
+
+
 
 # autostart applications
 exec_always --no-startup-id /usr/bin/light-locker
