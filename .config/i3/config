@@ -30,7 +30,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # set background image
-exec --no-startup-id feh --bg-fill $HOME/.images/background.png
+exec --no-startup-id feh --bg-fill $HOME/.config/background.png
 
 # enable floating for certain windows/applications
 for_window [class="floating"] floating enable, border normal, resize set 1200 700, move position center
@@ -50,6 +50,8 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+Return exec kitty --class floating
 bindsym $mod+Shift+a exec pavucontrol
 bindsym $mod+b exec kitty --class floating ranger
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+F2 exec discord 
 
 
 # kill focused window
@@ -110,10 +112,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 "
-set $ws2 "2 "
+set $ws1 "1 ?"
+set $ws2 "2 "
 set $ws3 "3 "
-set $ws4 "4"
+set $ws4 "4 "
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -157,6 +159,7 @@ workspace 9 output $monitor1
 workspace 10 output $monitor0
 
 # assign applications to specific workspaces
+assign [class="^discord$"] $ws9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -217,7 +220,8 @@ bindsym $mod+r mode "resize"
 # start i3bar and py3status
 bar {
         status_command i3status
-
+		separator_symbol " | "
+		tray_output primary
 		colors {
         		background	$bg
         		statusline	$text0

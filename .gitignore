@@ -14,18 +14,12 @@
 !/.config/nvim
 !/.config/ranger
 !/.config/picom.conf
+!/.config/background.png
 
-!/.images/
-/.images/**
-!/.images/background.png
+!/bin/
+/bin/**
 
-!/.scripts/
-/.scripts/**
-
-!/.setup/
+!/setup/
 /.setup/**
-!/.setup/install-packages.sh
+!/.setup/install-packages
 
-!/.workspaces/
-/.workspaces/**
-!/.workspaces/workspace-2.json
