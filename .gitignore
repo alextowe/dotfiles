@@ -9,17 +9,17 @@
 !/.config/
 /.config/**
 !/.config/i3/
-!/.config/i3status
+!/.config/i3/config
+!/.config/i3/workspaces/
+!/.config/i3/workspaces/workspace-2.json
+!/.config/i3status/
 !/.config/kitty/
-!/.config/nvim
-!/.config/ranger
+!/.config/nvim/
+!/.config/ranger/
 !/.config/picom.conf
 !/.config/background.png
 
 !/bin/
 /bin/**
-
-!/setup/
-/.setup/**
-!/.setup/install-packages
+!/bin/
 
