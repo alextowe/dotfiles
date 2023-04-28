@@ -25,8 +25,6 @@
                {
                // "class": "^kitty$",
                // "instance": "^kitty$",
-               // "machine": "^alex\\-pc$",
-               // "title": "^\\~$"
                }
             ],
             "type": "con"
@@ -48,8 +46,6 @@
                {
                // "class": "^kitty$",
                // "instance": "^kitty$",
-               // "machine": "^alex\\-pc$",
-               // "title": "^\\~$"
                }
             ],
             "type": "con"
@@ -71,8 +67,6 @@
                {
                // "class": "^kitty$",
                // "instance": "^kitty$",
-               // "machine": "^alex\\-pc$",
-               // "title": "^\\~$"
                }
             ],
             "type": "con"
@@ -124,8 +118,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -147,8 +139,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -192,8 +182,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -215,8 +203,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -240,8 +226,6 @@
                        {
                        // "class": "^kitty$",
                        // "instance": "^kitty$",
-                       // "machine": "^alex\\-pc$",
-                       // "title": "^\\~$"
                        }
                     ],
                     "type": "con"
@@ -283,8 +267,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -306,8 +288,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -340,8 +320,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -363,8 +341,6 @@
                                {
                                // "class": "^kitty$",
                                // "instance": "^kitty$",
-                               // "machine": "^alex\\-pc$",
-                               // "title": "^\\~$"
                                }
                             ],
                             "type": "con"
@@ -390,8 +366,6 @@
                {
                // "class": "^kitty$",
                // "instance": "^kitty$",
-               // "machine": "^alex\\-pc$",
-               // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 7\\ \\>\\ \\.config\\/i3\\/workspaces\\/workspace\\-2\\.json\\ $"
                }
             ],
             "type": "con"
