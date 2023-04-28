@@ -53,13 +53,19 @@ alias gl="git log"
 alias ga="git add ."
 alias gu="git restore --staged ."
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ds="dot status -u"
+alias dl="dot log"
+alias da="dot add ."
 gc () { git commit -m "$@" ; }
 gac () {
 	ga ;
-	gc "$@";
+	gc /"$@";
 }
-
-
+dc () { dot commit -m "$@" ; }
+dac () { 
+    da ;
+    dc "$@" ;
+}
 
 # code shorcuts
 alias code="cd $HOME/code"
