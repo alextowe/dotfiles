@@ -59,7 +59,7 @@ alias da="dot add ."
 gc () { git commit -m "$@" ; }
 gac () {
 	ga ;
-	gc /"$@";
+	gc "$@";
 }
 dc () { dot commit -m "$@" ; }
 dac () { 
