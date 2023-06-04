@@ -10,7 +10,6 @@
 /.config/**
 !/.config/i3/
 !/.config/i3/config
-!/.config/i3/create-workspaces
 !/.config/i3/workspaces/
 !/.config/i3/workspaces/workspace-1.json
 !/.config/i3/workspaces/workspace-10.json
@@ -23,5 +22,5 @@
 
 !/bin/
 /bin/**
-!/bin/
+!/bin/create-workspaces
 

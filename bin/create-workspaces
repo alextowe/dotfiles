@@ -8,9 +8,13 @@ code-oss &
 kitty --name dev_server &
 kitty --name venv &
 kitty --name term2 &
+kitty --name term3 &
+kitty --name term4 &
 
 i3-msg "workspace 9; exec discord"
 
 i3-msg "workspace 10; append_layout ~/.config/i3/workspaces/workspace-10.json"
 chromium &
 firefox &
+
+i3-msg "workspace 1"

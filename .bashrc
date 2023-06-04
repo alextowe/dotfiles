@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 
-
+export PATH="${PATH}:${HOME}/bin"
 # editor control shortcuts
 export EDITOR=nvim # editor
 export SUDO_EDITOR=nvim # sudo editor
@@ -24,13 +24,13 @@ alias i3c="nvim $HOME/.config/i3/config" # open i3 config file
 
 
 # package manager commands 
-pacsearch () { sudo pacman -Ss $@ ; }
-pacin () { sudo pacman -S $@ ; }
-yayin () { yay -S $@ ; }
-pacout () { sudo pacman -Rs $@ ; }
-yayout () { yay -R $@ ; }
 alias pacup="sudo pacman -Syu"
 alias yayup="yay -Syu"
+pacsearch () { sudo pacman -Ss $@ ; }
+pacin () { sudo pacman -Syu --noconfirm $@ ; }
+yayin () { yay -Syu $@ ; }
+pacout () { sudo pacman -Rs --noconfirm $@ ; }
+yayout () { yay -R $@ ; }
 
 
 
