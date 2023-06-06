@@ -23,4 +23,5 @@
 !/bin/
 /bin/**
 !/bin/create-workspaces
+!/bin/purge-orphans
 

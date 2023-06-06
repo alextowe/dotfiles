@@ -37,6 +37,11 @@ for_window [class="floating"] floating enable, border normal, resize set 1200 70
 for_window [class="feh"] floating enable, border normal, move position center
 for_window [class="vlc"] floating enable, border normal, move position center
 for_window [class="Pavucontrol"] floating enable, border normal, resize set 500 500, move position center
+#for_window [class="^Steam$" title="^Friends List$"] floating enable, move position center
+for_window [class="^Steam$" title="^Music Player$"] floating enable, move position center
+for_window [class="^Steam$" title="^Servers$"] floating enable, move position center
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable, move position center
+for_window [class="^Steam$" title="^Steam - News$"] floating enable, move position center
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -160,7 +165,7 @@ workspace 9 output $monitor1
 workspace 10 output $monitor1
 
 # create workspaces 
-exec $HOME/.config/i3/create-workspaces
+exec $HOME/bin/create-workspaces
 
 # assign applications to specific workspaces
 assign [class="^Steam$"] $ws8

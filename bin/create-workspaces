@@ -11,6 +11,8 @@ kitty --name term2 &
 kitty --name term3 &
 kitty --name term4 &
 
+i3-msg "workspace 8; exec steam"
+
 i3-msg "workspace 9; exec discord"
 
 i3-msg "workspace 10; append_layout ~/.config/i3/workspaces/workspace-10.json"
