@@ -165,7 +165,7 @@ workspace 9 output $monitor1
 workspace 10 output $monitor1
 
 # create workspaces 
-exec $HOME/bin/create-workspaces
+exec --no-startup-id $HOME/bin/create-workspaces
 
 # assign applications to specific workspaces
 assign [class="^Steam$"] $ws8
@@ -251,10 +251,6 @@ bar {
 exec_always --no-startup-id /usr/bin/light-locker
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id picom -b
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-#exec --no-startup-id nm-applet
 
 # gap settings
 gaps inner 10px
