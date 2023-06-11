@@ -3,30 +3,9 @@
     "floating": "auto_off",
     "layout": "tabbed",
     "marks": [],
-    "percent": 0.6,
+    "percent": null,
     "type": "con",
     "nodes": [
-        {
-            "border": "normal",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1037,
-               "width": 1916,
-               "x": 0,
-               "y": 0
-            },
-            "marks": [],
-            "name": "~",
-            "percent": 0.5,
-            "swallows": [
-               {
-                  "class": "^kitty$",
-                  "instance": "^term1$"
-               }
-            ],
-            "type": "con"
-        },
         {
             "border": "normal",
             "current_border_width": 2,
@@ -38,140 +17,202 @@
                "y": 156
             },
             "marks": [],
-            "name": "IDE",
+            "name": "Code",
             "percent": 0.5,
             "swallows": [
-               {
-                  "class": "^code\\-oss$",
-                  "instance": "^code\\-oss$"
-               }
+                {
+                    "class": "^code\\-oss$",
+                    "instance": "^code\\-oss$"
+                }    
             ],
             "type": "con"
-        }
-    ]
-}
-{
-    "border": "normal",
-    "floating": "auto_off",
-    "layout": "tabbed",
-    "marks": [],
-    "percent": 0.4,
-    "type": "con",
-    "nodes": [
+        },
         {
             "border": "normal",
             "floating": "auto_off",
-            "layout": "splitv",
+            "layout": "splith",
             "marks": [],
-            "percent": 0.333333333333333,
+            "percent": 0.5,
             "type": "con",
             "nodes": [
                 {
                     "border": "normal",
-                    "current_border_width": 2,
                     "floating": "auto_off",
-                    "geometry": {
-                       "height": 1037,
-                       "width": 1916,
-                       "x": 0,
-                       "y": 0
-                    },
+                    "layout": "splitv",
                     "marks": [],
-                    "name": "~",
                     "percent": 0.333333333333333,
-                    "swallows": [
+                    "type": "con",
+                    "nodes": [
                         {
-                           "class": "^kitty$",
-                           "instance": "^dev_server$"
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 498,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
+                            "name": "~",
+                            "percent": 0.5,
+                            "swallows": [
+                                {
+                                    "class": "^kitty$",
+                                    "instance": "^term1$"
+                                }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 498,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
+                            "name": "~",
+                            "percent": 0.5,
+                            "swallows": [
+                                {
+                                    "class": "^kitty$",
+                                    "instance": "^term2$"
+                                }
+                            ],
+                            "type": "con"
                         }
-                    ],
-                    "type": "con"
+                    ]
                 },
                 {
                     "border": "normal",
-                    "current_border_width": 2,
                     "floating": "auto_off",
-                    "geometry": {
-                       "height": 1037,
-                       "width": 1916,
-                       "x": 0,
-                       "y": 0
-                    },
+                    "layout": "splitv",
                     "marks": [],
-                    "name": "~",
                     "percent": 0.333333333333333,
-                    "swallows": [
+                    "type": "con",
+                    "nodes": [
                         {
-                           "class": "^kitty$",
-                           "instance": "^venv$"
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 498,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
+                            "name": "~",
+                            "percent": 0.5,
+                            "swallows": [
+                                {
+                                    "class": "^kitty$",
+                                    "instance": "^term3$"
+                                }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 498,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
+                            "name": "~",
+                            "percent": 0.5,
+                            "swallows": [
+                                {
+                                    "class": "^kitty$",
+                                    "instance": "^term4$"
+                                }
+                            ],
+                            "type": "con"
                         }
-                    ],
-                    "type": "con"
+                    ]
                 },
                 {
                     "border": "normal",
-                    "current_border_width": 2,
                     "floating": "auto_off",
-                    "geometry": {
-                       "height": 1037,
-                       "width": 1916,
-                       "x": 0,
-                       "y": 0
-                    },
+                    "layout": "splitv",
                     "marks": [],
-                    "name": "~",
                     "percent": 0.333333333333333,
-                    "swallows": [
+                    "type": "con",
+                    "nodes": [
                         {
-                           "class": "^kitty$",
-                           "instance": "^term2$"
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 498,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
+                            "name": "~",
+                            "percent": 0.333333333333333,
+                            "swallows": [
+                                {
+                                    "class": "^kitty$",
+                                    "instance": "^term5$"
+                                }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 498,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
+                            "name": "~",
+                            "percent": 0.333333333333333,
+                            "swallows": [
+                                {
+                                    "class": "^kitty$",
+                                    "instance": "^term6$"
+                                }
+                            ],
+                            "type": "con"
+                        },
+                        {
+                            "border": "normal",
+                            "current_border_width": 2,
+                            "floating": "auto_off",
+                            "geometry": {
+                               "height": 498,
+                               "width": 1916,
+                               "x": 0,
+                               "y": 0
+                            },
+                            "marks": [],
+                            "name": "~",
+                            "percent": 0.333333333333333,
+                            "swallows": [
+                                {
+                                    "class": "^kitty$",
+                                    "instance": "^term7$"
+                                }
+                            ],
+                            "type": "con"
                         }
-                    ],
-                    "type": "con"
+                    ]
                 }
             ]
-        },
-        {
-            "border": "normal",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1037,
-               "width": 1916,
-               "x": 0,
-               "y": 0
-            },
-            "marks": [],
-            "name": "~",
-            "percent": 0.333333333333333,
-            "swallows": [
-               {
-                  "class": "^kitty$",
-                  "instance": "^term3$"
-               }
-            ],
-            "type": "con"
-        },
-        {
-            "border": "normal",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1037,
-               "width": 1916,
-               "x": 0,
-               "y": 0
-            },
-            "marks": [],
-            "name": "~",
-            "percent": 0.333333333333333,
-            "swallows": [
-               {
-                  "class": "^kitty$",
-                  "instance": "^term4$"
-               }
-            ],
-            "type": "con"
         }
     ]
 }

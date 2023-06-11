@@ -1,18 +1,14 @@
 #!/bin/bash
 
-ws=`i3-msg -t get_workspaces | jq '.[] | select(.focused==true).name' | cut -d"\"" -f2`
-
 i3-msg "workspace 1; append_layout ~/.config/i3/workspaces/workspace-1.json"
-kitty --name term1 &
 code-oss &
-kitty --name dev_server &
-kitty --name venv &
+kitty --name term1 &
 kitty --name term2 &
 kitty --name term3 &
 kitty --name term4 &
-
-i3-msg "workspace 8; append_layout ~/.config/i3/workspaces/workspace-8.json"
-steam &
+kitty --name term5 &
+kitty --name term6 &
+kitty --name term7 &
 
 i3-msg "workspace 10; append_layout ~/.config/i3/workspaces/workspace-10.json"
 chromium &
